@@ -1,1 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
+
+
+@theme {
+  --color-primary: #28CB8B;
+  --color-secondary: #263238;
+  --color-info: #2194f3;
+
+  /* Neutral */
+  --color-black: #263238;
+  --color-d_grey: #4D4D4D;
+  --color-grey: #717171;
+  --color-l_grey: #89939E;
+  --color-grey_blue: #ABBED1;
+  --color-silver: #F5F7FA;
+  --color-white: #FFFFFF;
+
+  /* Shade */
+  --color-shade1: #43A046;
+  --color-shade2: #388E3B;
+  --color-shade3: #237D31;
+  --color-shade4: #1B5E1F;
+  --color-shade5: #103E13;
+
+  /* Tint */
+  --color-tint1: #66BB69;
+  --color-tint2: #81C784;
+  --color-tint3: #A5D6A7;
+  --color-tint4: #C8E6C9;
+  --color-tint5: #E8F5E9;
+
+  /* Action */
+  --color-warning: #FBC02D;
+  --color-error: #E53835;
+  --color-success: #2E7D31;
+}
+
+@theme {
+  /* font family */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Headline sizes */
+  --text-h1: 64px;
+  --text-h1--line-height: 76px;
+
+  --text-h2: 36px;
+  --text-h2--line-height: 44px;
+
+  --text-h3: 28px;
+  --text-h3--line-height: 36px;
+
+  --text-h4: 20px;
+  --text-h4--line-height: 28px;
+
+  /* Body Regular */
+  --text-body1: 18px;
+  --text-body1--line-height: 28px;
+
+  --text-body2: 16px;
+  --text-body2--line-height: 24px;
+
+  --text-body3: 14px;
+  --text-body3--line-height: 20px;
+
+  --text-body4: 12px;
+  --text-body4--line-height: 16px;
+
+  /* Body Medium (500 weight) */
+  --text-body1-medium: 18px;
+  --text-body1-medium--line-height: 28px;
+
+  --text-body2-medium: 16px;
+  --text-body2-medium--line-height: 24px;
+
+  --text-body3-medium: 14px;
+  --text-body3-medium--line-height: 20px;
+
+  --text-body4-medium: 12px;
+  --text-body4-medium--line-height: 16px;
+}
+
+@layer utilities {
+  /* Headlines */
+  .text-h1 { @apply font-sans font-semibold text-[var(--text-h1)] leading-[var(--text-h1--line-height)]; }
+  .text-h2 { @apply font-sans font-semibold text-[var(--text-h2)] leading-[var(--text-h2--line-height)]; }
+  .text-h3 { @apply font-sans font-semibold text-[var(--text-h3)] leading-[var(--text-h3--line-height)]; }
+  .text-h4 { @apply font-sans font-semibold text-[var(--text-h4)] leading-[var(--text-h4--line-height)]; }
+
+  /* Body Regular */
+  .text-body1 { @apply font-sans font-regular text-[var(--text-body1)] leading-[var(--text-body1--line-height)]; }
+  .text-body2 { @apply font-sans font-regular text-[var(--text-body2)] leading-[var(--text-body2--line-height)]; }
+  .text-body3 { @apply font-sans font-regular text-[var(--text-body3)] leading-[var(--text-body3--line-height)]; }
+  .text-body4 { @apply font-sans font-regular text-[var(--text-body4)] leading-[var(--text-body4--line-height)]; }
+
+  /* Body Medium */
+  .text-body1-medium { @apply font-sans font-medium text-[var(--text-body1-medium)] leading-[var(--text-body1-medium--line-height)]; }
+  .text-body2-medium { @apply font-sans font-medium text-[var(--text-body2-medium)] leading-[var(--text-body2-medium--line-height)]; }
+  .text-body3-medium { @apply font-sans font-medium text-[var(--text-body3-medium)] leading-[var(--text-body3-medium--line-height)]; }
+  .text-body4-medium { @apply font-sans font-medium text-[var(--text-body4-medium)] leading-[var(--text-body4-medium--line-height)]; }
+}
